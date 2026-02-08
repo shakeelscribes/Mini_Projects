@@ -33,6 +33,8 @@ while any_person:
         any_person = False
 
 max_amnt = 0
+winner = ""
+
 for bidder in user_details:
     bidder_amnt = user_details[bidder]
 
