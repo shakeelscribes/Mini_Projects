@@ -1,7 +1,4 @@
-# TODO-1: Ask the user for input
-# TODO-2: Save data into dictionary {name: price}
-# TODO-3: Whether if new bids need to be added
-# TODO-4: Compare bids in dictionary
+
 logo = r'''
                          ___________
                          \         /
@@ -35,6 +32,17 @@ while any_person:
     elif continue_bid == "no":
         any_person = False
 
-winner_name = max(user_details, key = user_details.get)
+max_amnt = 0
+for bidder in user_details:
+    bidder_amnt = user_details[bidder]
 
-print(f"The Winner is {winner_name} with the amount of ${max(user_details.values())}")
+    if bidder_amnt > max_amnt:
+        max_amnt = bidder_amnt
+        winner = bidder
+
+print(f"The Winner is {winner} with the Amount of ${max_amnt}")
+
+
+# winner_name = max(user_details, key = user_details.get)
+#
+# print(f"The Winner is {winner_name} with the amount of ${max(user_details.values())}")
