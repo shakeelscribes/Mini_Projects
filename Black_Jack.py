@@ -43,6 +43,7 @@ while cont:
                     print(f"Your Final Hand is {user_card} , final Score: {sum(user_card)}")
                     print(f"Computer's Final Hand is {comp_card}, Final Score: {sum(comp_card)}")
                     print("Draw 🥲")
+                    exceeds_21 = True
 
                 com_choice = False
                 while not com_choice:
