@@ -39,6 +39,11 @@ while cont:
                     print(f"Computer's First Card: {comp_card[0]}")
 
             elif another_card == "n":
+                if sum(user_card) == sum(comp_card):
+                    print(f"Your Final Hand is {user_card} , final Score: {sum(user_card)}")
+                    print(f"Computer's Final Hand is {comp_card}, Final Score: {sum(comp_card)}")
+                    print("Draw 🥲")
+
                 com_choice = False
                 while not com_choice:
                     comp_card.append(random.choice(cards))
