@@ -52,6 +52,12 @@ while cont:
                         print("You Win!")
                         exceeds_21  = True
                         com_choice = True
+                    elif sum(comp_card) > sum(user_card) and sum(comp_card) < 21:
+                        print(f"Your Final Hand is {user_card} , final Score: {sum(user_card)}")
+                        print(f"Computer's Final Hand is {comp_card}, Final Score: {sum(comp_card)}")
+                        print("You Lose! 🥲")
+                        com_choice = True
+                        exceeds_21 = True
                     else:
                         print(f"Your Cards: {user_card}, Current Score: {sum(user_card)}")
                         print(f"Computer's First Card: {comp_card[0]}")
